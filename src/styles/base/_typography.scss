@@ -1,0 +1,36 @@
+html,
+body {
+    background-color: #fdfdfd;
+    color: lookup($colors, brand light-gray);
+    font-family: lookup($typography, family lato);
+    font-size: 100%;
+    font-weight: inherit;
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+    margin: 0;
+}
+
+p {
+    font-size: 18px;
+    font-weight: inherit;
+    margin: {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 24px;
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

@@ -53,6 +53,10 @@ $breakpoint: (
 );
 
 $typography: (
+    family: (
+        lato: #{'Lato', sans-serif},
+        antonio: #{'Antonio', sans-serif},
+    ),
     title: (
         size: (
             whisper: 24px,
