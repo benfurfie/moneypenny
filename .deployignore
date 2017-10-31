@@ -1,0 +1,10 @@
+## This file works in a similar fashion to .gitignore, but is specifically for the deployment tool deployHQ. It allows me to commit files to the repo – such as build files – while excluding them from being uploaded to the server.
+## I have committed compiled code (CSS and JS) in this build. However, as part of my use of continuous integration, I would normally have the server build the final compiled files there. This prevents issues with conflicts with those compiled files when several developers are working on the same project.
+
+gulpfile.js
+package.json
+webpack.config.js
+yarn.lock
+.gitignore
+readme.md
+src/**

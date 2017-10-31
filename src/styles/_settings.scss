@@ -1,0 +1,80 @@
+$base-colors: (
+    black: #000,
+    white: #fff,
+    tuatara: #2E2E2C,
+    dove-gray: #666666,
+    iron: #E4E4E5,
+    gray-nurse: #E7E8E7,
+    flamingo: #F26246,
+    tree-poppy: #FAA31A,
+    casablanca: #FBB656,
+    froly: #F26C6D,
+    amaranth: #EE3342,
+);
+
+$colors: (
+    brand: (
+        light: lookup($base-colors, white),
+        light-gray: lookup($base-colors, dove-gray),
+        gray: lookup($base-colors, iron),
+        dark-gray: lookup($base-colors, tuatara),
+        light-yellow: lookup($base-colors, casablanca),
+        dark-yellow: lookup($base-colors, casablanca),
+        light-red: lookup($base-colors, froly),
+        red: lookup($base-colors, flamingo),
+        dark-red: lookup($base-colors, amaranth),
+        dark: lookup($base-colors, black),
+    ),
+);
+
+$sizes: (
+    spacing: (
+        xs: 8px,
+        sm: 16px,
+        md: 24px,
+        lg: 32px,
+        xl: 40px,
+        xxl: 60px,
+    ),
+    width: (
+        max-width: 1100px,
+        max-spacing: 1164px,
+    )
+);
+
+$breakpoint: (
+    min: 320px,
+    xsmall: 400px,
+    small: 550px,
+    medium: 768px,
+    large: 1024px,
+    xlarge: 1440px,
+    max: 1920px,
+);
+
+$typography: (
+    title: (
+        size: (
+            whisper: 24px,
+            talk: 32px,
+            shout: 48px,
+            scream: 84px,
+        ),
+    ),
+    paragraph: (
+        size: (
+            whisper: 17px,
+            talk: 18px,
+        ),
+    ),
+    weight: (
+        light: 300,
+        normal: 400,
+        medium: 600,
+        bold: 800,
+    ),
+);
+
+$animation: (
+    transition: all 150ms ease-in-out,
+)
