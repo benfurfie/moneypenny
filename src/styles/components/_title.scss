@@ -2,17 +2,26 @@
     display: inline-block;
     line-height: 1;
     &__icon {
-        height: lookup($typography, title size talk);
+        height: lookup($typography, title size whisper);
         margin: {
             right: lookup($sizes, spacing xs);
+        }
+        @include breakpoint(large) {
+            height: lookup($typography, title size talk);
         }
     }
     &--megaphone {
         font-family: lookup($typography, family antonio);
-        font-size: lookup($typography, title size megaphone);
+        font-size: lookup($typography, title size scream);
         letter-spacing: -1px;
         margin: {
-            bottom: lookup($sizes, spacing xl);
+            bottom: lookup($sizes, spacing lg);
+        }
+        @include breakpoint(large) {
+            font-size: lookup($typography, title size megaphone);
+            margin: {
+                bottom: lookup($sizes, spacing xl);
+            }
         }
     }
     &--scream {
@@ -22,14 +31,22 @@
 
     }
     &--talk {
-        font-size: lookup($typography, title size talk);
+        font-size: lookup($typography, title size whisper);
+        @include breakpoint(large) {
+            font-size: lookup($typography, title size talk);
+        }
     }
 
     &--highlight {
         color: lookup($colors, brand dark-red);
         font-family: lookup($typography, family antonio);
         margin: {
-            bottom: lookup($sizes, spacing xxl);
+            bottom: lookup($sizes, spacing lg);
+        }
+        @include breakpoint(large) {
+            margin: {
+                bottom: lookup($sizes, spacing xxl);
+            }
         }
     }
     &--has-icon {
