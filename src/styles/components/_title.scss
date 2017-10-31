@@ -1,0 +1,21 @@
+.title {
+    line-height: 1;
+    &--megaphone {
+        font-family: lookup($typography, family antonio);
+        font-size: lookup($typography, title size megaphone);
+        letter-spacing: -1px;
+    }
+    &--scream {
+
+    }
+    &--shout {
+
+    }
+    &--talk {
+        font-size: lookup($typography, title size talk);
+    }
+
+    &--highlight {
+        color: lookup($colors, brand amaranth);
+    }
+}

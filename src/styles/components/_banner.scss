@@ -1,0 +1,15 @@
+.banner {
+    background-size: contain;
+    background-position: center right;
+    background-repeat: no-repeat;
+    &__container {
+        @include container;
+        padding: {
+            top: 130px;
+            bottom: 300px;
+        }
+    }
+    &__content {
+        max-width: 50%;
+    }
+}
