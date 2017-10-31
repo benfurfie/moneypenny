@@ -1,5 +1,5 @@
 .banner {
-    background-size: contain;
+    background-size: cover;
     background-position: center right;
     background-repeat: no-repeat;
     &__container {
@@ -11,5 +11,8 @@
     }
     &__content {
         max-width: 50%;
+    }
+    p {
+        font-size: lookup($typography, paragraph size shout);
     }
 }
