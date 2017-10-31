@@ -18,7 +18,7 @@ $colors: (
         light-gray: lookup($base-colors, dove-gray),
         gray: lookup($base-colors, iron),
         dark-gray: lookup($base-colors, tuatara),
-        light-yellow: lookup($base-colors, casablanca),
+        light-yellow: lookup($base-colors, tree-poppy),
         dark-yellow: lookup($base-colors, casablanca),
         light-red: lookup($base-colors, froly),
         red: lookup($base-colors, flamingo),
@@ -56,6 +56,9 @@ $typography: (
     family: (
         lato: #{'Lato', sans-serif},
         antonio: #{'Antonio', sans-serif},
+    ),
+    button: (
+        size: 20px,
     ),
     title: (
         size: (
