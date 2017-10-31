@@ -1,9 +1,19 @@
 .title {
+    display: inline-block;
     line-height: 1;
+    &__icon {
+        height: lookup($typography, title size talk);
+        margin: {
+            right: lookup($sizes, spacing xs);
+        }
+    }
     &--megaphone {
         font-family: lookup($typography, family antonio);
         font-size: lookup($typography, title size megaphone);
         letter-spacing: -1px;
+        margin: {
+            bottom: lookup($sizes, spacing xl);
+        }
     }
     &--scream {
 
@@ -16,6 +26,16 @@
     }
 
     &--highlight {
-        color: lookup($colors, brand amaranth);
+        color: lookup($colors, brand dark-red);
+        font-family: lookup($typography, family antonio);
+        margin: {
+            bottom: lookup($sizes, spacing xxl);
+        }
+    }
+    &--has-icon {
+        display: flex;
+    }
+    &--uppercase {
+        text-transform: uppercase;
     }
 }
