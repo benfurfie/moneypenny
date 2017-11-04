@@ -25,13 +25,15 @@
         }
     }
     &--scream {
-
+        font-size: lookup($typography, title size scream);
+        font-weight: lookup($typography, weight light);
     }
     &--shout {
-
+        font-size: lookup($typography, title size shout);
+        font-weight: lookup($typography, weight light);
     }
     &--talk {
-        font-size: lookup($typography, title size whisper);
+        font-size: lookup($typography, title size talk);
         @include breakpoint(large) {
             font-size: lookup($typography, title size talk);
         }
@@ -39,6 +41,11 @@
         margin: {
             bottom: 60px;
         }
+    }
+    &--whisper {
+        font-size: lookup($typography, title size whisper);
+        font-weight: lookup($typography, weight normal);
+        padding-bottom: lookup($sizes, spacing xs);
     }
 
     &--highlight {
@@ -61,5 +68,19 @@
     }
     &--uppercase {
         text-transform: uppercase;
+    }
+
+    &--orange {
+        color: lookup($colors, brand light-red);
+    }
+
+    &--border-bottom {
+        border-bottom: 1px solid lookup($colors, brand light-red);
+        margin-bottom: lookup($sizes, spacing sm);
+        padding-bottom: lookup($sizes, spacing xs);
+    }
+
+    small {
+        font-size: lookup($typography, title size talk);
     }
 }
