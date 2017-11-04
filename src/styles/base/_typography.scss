@@ -1,7 +1,7 @@
 html,
 body {
     background-color: #fdfdfd;
-    color: lookup($colors, brand light-gray);
+    color: lookup($colors, brand dark-gray);
     font-family: lookup($typography, family lato);
     font-size: 100%;
     font-weight: inherit;
