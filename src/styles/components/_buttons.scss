@@ -1,5 +1,6 @@
 .button {
     background-color: lookup($colors, brand light-yellow);
+    border: 0;
     color: lookup($colors, brand light);
     cursor: pointer !important;
     display: block;
