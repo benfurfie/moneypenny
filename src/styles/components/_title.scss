@@ -35,6 +35,10 @@
         @include breakpoint(large) {
             font-size: lookup($typography, title size talk);
         }
+        font-weight: lookup($typography, weight light);
+        margin: {
+            bottom: 60px;
+        }
     }
 
     &--highlight {
@@ -48,6 +52,9 @@
                 bottom: lookup($sizes, spacing xxl);
             }
         }
+    }
+    &--red {
+        color: lookup($colors, brand dark-red);
     }
     &--has-icon {
         display: flex;
