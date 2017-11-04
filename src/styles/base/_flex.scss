@@ -6,6 +6,9 @@
     &--justify-center {
         justify-content: center;
     }
+    &--justify-space-between {
+        justify-content: space-between;
+    }
     &--column {
         flex-direction: column;
     }
