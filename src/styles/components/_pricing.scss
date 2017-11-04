@@ -1,0 +1,27 @@
+.pricing {
+    @include container;
+    &__table {
+        text-align: center;
+        &--highlight {
+            border: 2px solid lookup($colors, brand light-red);
+        }
+    }
+    &__top {
+        background-color: lookup($colors, brand very-light-gray);
+        padding: {
+            top: lookup($sizes, spacing md);
+            bottom: lookup($sizes, spacing md);
+            left: lookup($sizes, spacing md);
+            right: lookup($sizes, spacing md);
+        }
+    }
+    &__bottom {
+        background-color: lookup($colors, brand light-gray);
+        padding: {
+            top: lookup($sizes, spacing md);
+            bottom: lookup($sizes, spacing md);
+            left: lookup($sizes, spacing md);
+            right: lookup($sizes, spacing md);
+        }
+    }
+}

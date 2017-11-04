@@ -1,0 +1,9 @@
+.form {
+    margin-bottom: lookup($sizes, spacing xl);
+    &__item {
+        margin-bottom: lookup($sizes, spacing lg);
+        span {
+            color: lookup($colors, brand dark-red);
+        }
+    }
+}
