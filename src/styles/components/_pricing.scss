@@ -1,6 +1,7 @@
 .pricing {
     @include container;
     &__table {
+        overflow: hidden;
         text-align: center;
         &--highlight {
             border: 2px solid lookup($colors, brand light-red);
@@ -17,6 +18,7 @@
     }
     &__bottom {
         background-color: lookup($colors, brand light-gray);
+        height: 100%;
         padding: {
             top: lookup($sizes, spacing md);
             bottom: lookup($sizes, spacing md);

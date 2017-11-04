@@ -646,6 +646,7 @@ ol {
       padding-left: 1.5rem;
       padding-right: 1.5rem; } }
   .pricing__table {
+    overflow: hidden;
     text-align: center; }
     .pricing__table--highlight {
       border: 0.125rem solid #F26C6D; }
@@ -657,6 +658,7 @@ ol {
     padding-right: 1.5rem; }
   .pricing__bottom {
     background-color: #E7E8E7;
+    height: 100%;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     padding-left: 1.5rem;
