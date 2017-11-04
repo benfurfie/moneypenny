@@ -4,6 +4,7 @@
     cursor: pointer !important;
     display: block;
     font-size: lookup($typography, button size);
+    line-height: 1;
     margin: {
         bottom: lookup($sizes, spacing sm);
     }
