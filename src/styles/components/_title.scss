@@ -37,7 +37,6 @@
         @include breakpoint(large) {
             font-size: lookup($typography, title size talk);
         }
-        font-weight: lookup($typography, weight light);
     }
     &--whisper {
         font-size: lookup($typography, title size whisper);
@@ -69,6 +68,10 @@
 
     &--orange {
         color: lookup($colors, brand light-red);
+    }
+
+    &--light {
+        font-weight: lookup($typography, weight light);
     }
 
     &--border-bottom {
