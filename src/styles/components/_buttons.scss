@@ -17,6 +17,11 @@
         right: lookup($sizes, spacing md);
     }
     text-align: center;
+    transition: lookup($animation, transition);
+    &:hover,
+    &:focus {
+        background-color: darken(lookup($colors, brand light-yellow), 10%);
+    }
     &:last-child {
         margin: {
             right: 0;
@@ -32,5 +37,9 @@
 
     &--primary {
         background-color: lookup($colors, brand dark-red);
+        &:hover,
+        &:focus {
+            background-color: darken(lookup($colors, brand dark-red), 10%);
+        }
     }
 }

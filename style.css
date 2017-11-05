@@ -579,7 +579,11 @@ a {
   padding-bottom: 1rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  text-align: center; }
+  text-align: center;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out; }
+  .button:hover, .button:focus {
+    background-color: #dc8905; }
   .button:last-child {
     margin-right: 0; }
   @media screen and (min-width: 48rem) {
@@ -589,6 +593,8 @@ a {
       margin-bottom: 0; } }
   .button--primary {
     background-color: #EE3342; }
+    .button--primary:hover, .button--primary:focus {
+      background-color: #dc1222; }
 
 ul,
 ol {
