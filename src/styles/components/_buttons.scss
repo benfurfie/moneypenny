@@ -31,6 +31,6 @@
     }
 
     &--primary {
-        background-color: lookup($colors, brand light-red);
+        background-color: lookup($colors, brand dark-red);
     }
 }
