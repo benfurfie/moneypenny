@@ -1,0 +1,27 @@
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+
+}
+
+.list {
+    margin-bottom: lookup($sizes, spacing sm);
+    &--includes {
+        border-bottom: lookup($colors, brand dark-gray);
+    }
+    &__item {
+        &--padded {
+            padding: {
+                top: lookup($sizes, spacing xs);
+                bottom: lookup($sizes, spacing xs);
+            }
+        }
+        &--underlined {
+            border-bottom: 1px solid lookup($colors, brand dark-gray);
+        }
+    }
+}

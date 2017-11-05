@@ -1,0 +1,17 @@
+.nav {
+    background-image: linear-gradient(90deg, #3A3A3C 0%, #DA6A4E 50%, #F26245 100%);
+    padding: {
+        top: lookup($sizes, spacing xs);
+        bottom: lookup($sizes, spacing xs);
+    }
+    &--invert {
+        color: lookup($colors, brand light);
+    }
+    &__link {
+        color: inherit;
+        margin: {
+            left: lookup($sizes, spacing xs);
+            right: lookup($sizes, spacing xs);
+        }
+    }
+}

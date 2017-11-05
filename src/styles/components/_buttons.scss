@@ -1,0 +1,36 @@
+.button {
+    background-color: lookup($colors, brand light-yellow);
+    border: 0;
+    color: lookup($colors, brand light);
+    cursor: pointer !important;
+    display: block;
+    font-size: lookup($typography, button size);
+    line-height: 1;
+    margin: {
+        bottom: lookup($sizes, spacing sm);
+    }
+    min-width: 225px;
+    padding: {
+        top: lookup($sizes, spacing sm);
+        bottom: lookup($sizes, spacing sm);
+        left: lookup($sizes, spacing md);
+        right: lookup($sizes, spacing md);
+    }
+    text-align: center;
+    &:last-child {
+        margin: {
+            right: 0;
+        }
+    }
+    @include breakpoint(medium) {
+        display: inline-block;
+        margin: {
+            right: lookup($sizes, spacing md);
+            bottom: 0;
+        }
+    }
+
+    &--primary {
+        background-color: lookup($colors, brand light-red);
+    }
+}

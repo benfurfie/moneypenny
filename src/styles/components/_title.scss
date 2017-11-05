@@ -1,0 +1,86 @@
+.title {
+    display: inline-block;
+    line-height: 1;
+    &__icon {
+        height: lookup($typography, title size whisper);
+        margin: {
+            right: lookup($sizes, spacing xs);
+        }
+        @include breakpoint(large) {
+            height: lookup($typography, title size talk);
+        }
+    }
+    &--megaphone {
+        font-family: lookup($typography, family antonio);
+        font-size: lookup($typography, title size scream);
+        letter-spacing: -1px;
+        margin: {
+            bottom: lookup($sizes, spacing lg);
+        }
+        @include breakpoint(large) {
+            font-size: lookup($typography, title size megaphone);
+            margin: {
+                bottom: lookup($sizes, spacing xl);
+            }
+        }
+    }
+    &--scream {
+        font-size: lookup($typography, title size scream);
+        font-weight: lookup($typography, weight light);
+    }
+    &--shout {
+        font-size: lookup($typography, title size shout);
+        font-weight: lookup($typography, weight light);
+    }
+    &--talk {
+        font-size: lookup($typography, title size talk);
+        @include breakpoint(large) {
+            font-size: lookup($typography, title size talk);
+        }
+        font-weight: lookup($typography, weight light);
+        margin: {
+            bottom: 60px;
+        }
+    }
+    &--whisper {
+        font-size: lookup($typography, title size whisper);
+        font-weight: lookup($typography, weight normal);
+        padding-bottom: lookup($sizes, spacing xs);
+    }
+
+    &--highlight {
+        color: lookup($colors, brand dark-red);
+        font-family: lookup($typography, family antonio);
+        margin: {
+            bottom: lookup($sizes, spacing lg);
+        }
+        @include breakpoint(large) {
+            margin: {
+                bottom: lookup($sizes, spacing xxl);
+            }
+        }
+    }
+    &--red {
+        color: lookup($colors, brand dark-red);
+    }
+    &--has-icon {
+        display: flex;
+    }
+    &--uppercase {
+        text-transform: uppercase;
+    }
+
+    &--orange {
+        color: lookup($colors, brand light-red);
+    }
+
+    &--border-bottom {
+        border-bottom: 1px solid lookup($colors, brand light-red);
+        margin-bottom: lookup($sizes, spacing sm);
+        padding-bottom: lookup($sizes, spacing xs);
+    }
+
+    small {
+        font-size: lookup($typography, title size talk);
+    }
+}

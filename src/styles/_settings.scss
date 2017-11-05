@@ -1,6 +1,7 @@
 $base-colors: (
     black: #000,
     white: #fff,
+    athens-gray: #F9FAFB,
     tuatara: #2E2E2C,
     dove-gray: #666666,
     iron: #E4E4E5,
@@ -15,10 +16,12 @@ $base-colors: (
 $colors: (
     brand: (
         light: lookup($base-colors, white),
-        light-gray: lookup($base-colors, dove-gray),
+        very-light-gray: lookup($base-colors, athens-gray),
+        light-gray: lookup($base-colors, gray-nurse),
         gray: lookup($base-colors, iron),
-        dark-gray: lookup($base-colors, tuatara),
-        light-yellow: lookup($base-colors, casablanca),
+        dark-gray: lookup($base-colors, dove-gray),
+        very-dark-gray: lookup($base-colors, tuatara),
+        light-yellow: lookup($base-colors, tree-poppy),
         dark-yellow: lookup($base-colors, casablanca),
         light-red: lookup($base-colors, froly),
         red: lookup($base-colors, flamingo),
@@ -53,6 +56,13 @@ $breakpoint: (
 );
 
 $typography: (
+    family: (
+        lato: #{'Lato', sans-serif},
+        antonio: #{'Antonio', sans-serif},
+    ),
+    button: (
+        size: 20px,
+    ),
     title: (
         size: (
             whisper: 24px,
@@ -66,6 +76,7 @@ $typography: (
         size: (
             whisper: 17px,
             talk: 18px,
+            shout: 22px,
         ),
     ),
     weight: (

@@ -1,0 +1,39 @@
+.banner {
+    background-size: cover;
+    background-position: center left;
+    background-repeat: no-repeat;
+    &__container {
+        @include container;
+        padding: {
+            top: 65px;
+            bottom: 150px;
+        }
+        @include breakpoint(large) {
+            padding: {
+                top: 130px;
+                bottom: 300px;
+            }
+        }
+    }
+    &__content {
+        max-width: 100%;
+        @include breakpoint(medium) {
+            max-width: 75%;
+        }
+        @include breakpoint(xlarge) {
+            max-width: 50%;
+        }
+    }
+    p {
+        font-size: lookup($typography, paragraph size talk);
+        margin: {
+            bottom: 40px;
+        }
+        @include breakpoint(xlarge) {
+            font-size: lookup($typography, paragraph size shout);
+            margin: {
+                bottom: 80px;
+            }
+        }
+    }
+}
