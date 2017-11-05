@@ -14,4 +14,10 @@
             right: lookup($sizes, spacing xs);
         }
     }
+    &__divide {
+        display: none;
+        @include breakpoint(medium) {
+            display: inline;
+        }
+    }
 }
