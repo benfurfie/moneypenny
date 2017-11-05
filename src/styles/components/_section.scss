@@ -3,4 +3,10 @@
         top: 120px;
         bottom: 80px;
     }
+    &__wrap {
+        @include container;
+    }
+    &--cards {
+        background-color: lookup($colors, brand gray);
+    }
 }
