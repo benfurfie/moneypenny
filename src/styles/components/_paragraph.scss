@@ -1,0 +1,6 @@
+.paragraph {
+    margin-bottom: lookup($sizes, spacing xl);
+    &--whisper {
+        font-size: lookup($typography, paragraph size whisper);
+    }
+}
