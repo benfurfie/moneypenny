@@ -38,9 +38,6 @@
             font-size: lookup($typography, title size talk);
         }
         font-weight: lookup($typography, weight light);
-        margin: {
-            bottom: 60px;
-        }
     }
     &--whisper {
         font-size: lookup($typography, title size whisper);
@@ -82,5 +79,23 @@
 
     small {
         font-size: lookup($typography, title size talk);
+    }
+
+    &--margin {
+        &-small {
+            margin-bottom: lookup($sizes, spacing sm);
+        }
+        &-medium {
+            margin-bottom: lookup($sizes, spacing md);
+        }
+        &-large {
+            margin-bottom: lookup($sizes, spacing lg);
+        }
+        &-xlarge {
+            margin-bottom: lookup($sizes, spacing xl);
+        }
+        &-xxlarge {
+            margin-bottom: lookup($sizes, spacing xxl);
+        }
     }
 }

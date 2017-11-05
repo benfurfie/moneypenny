@@ -1,0 +1,15 @@
+.calltoaction {
+    background-color: lookup($colors, brand very-dark-gray);
+    color: lookup($colors, brand light);
+    font-weight: lookup($typography, weight light);
+    &--center {
+        text-align: center;
+    }
+    &__wrap {
+        @include container(700px);
+        padding: {
+            top: lookup($sizes, spacing xl);
+            bottom: lookup($sizes, spacing xxl);
+        }
+    }
+}
