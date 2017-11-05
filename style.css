@@ -737,46 +737,44 @@ ol {
         padding-left: 1.5rem;
         padding-right: 1.5rem; } }
 
-@media screen and (max-width: 34.375rem) {
-  .card {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-       -moz-box-orient: vertical;
-       -moz-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; } }
-
-.card__image {
-  width: 100%; }
-
-.card__content {
-  background-color: rgba(255, 255, 255, 0.75);
-  width: 100%; }
+.card {
+  margin-bottom: 1.5rem; }
+  .card:last-child {
+    margin-bottom: 0; }
+  @media screen and (max-width: 34.375rem) {
+    .card {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+         -moz-box-orient: vertical;
+         -moz-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+  .card__image {
+    width: 100%; }
+  .card__content {
+    background-color: rgba(255, 255, 255, 0.75);
+    width: 100%;
+    z-index: 9; }
+    @media screen and (min-width: 34.375rem) {
+      .card__content {
+        background-color: transparent; } }
+  .card__wrap {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem; }
+    @media screen and (min-width: 34.375rem) {
+      .card__wrap {
+        background-color: rgba(255, 255, 255, 0.75); } }
   @media screen and (min-width: 34.375rem) {
-    .card__content {
-      background-color: transparent; } }
-
-.card__wrap {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  padding-left: 2rem;
-  padding-right: 2rem; }
+    .card-content--left {
+      margin-right: -100%; } }
+  @media screen and (min-width: 48rem) {
+    .card-content--left {
+      margin-right: -25%; } }
   @media screen and (min-width: 34.375rem) {
-    .card__wrap {
-      background-color: rgba(255, 255, 255, 0.75); } }
-
-@media screen and (min-width: 34.375rem) {
-  .card-content--left {
-    margin-right: -100%; } }
-
-@media screen and (min-width: 48rem) {
-  .card-content--left {
-    margin-right: -25%; } }
-
-@media screen and (min-width: 34.375rem) {
-  .card-content--right {
-    margin-left: -100%; } }
-
-@media screen and (min-width: 48rem) {
-  .card-content--right {
-    margin-left: -25%; } }
+    .card-content--right {
+      margin-left: -100%; } }
+  @media screen and (min-width: 48rem) {
+    .card-content--right {
+      margin-left: -25%; } }
