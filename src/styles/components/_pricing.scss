@@ -1,16 +1,39 @@
 .pricing {
     @include container;
+    padding: {
+        top: lookup($sizes, spacing lg);
+    }
     &__table {
         overflow: hidden;
         text-align: center;
         &--highlight {
             border: 2px solid lookup($colors, brand light-red);
+            overflow: visible;
+            position: relative;
+            &:before {
+                content: url('/images/svgs/crown.svg');
+                display: block;
+                height: 58px;
+                left: 50%;
+                margin-left: -30px;
+                margin-top: -70px;
+                padding: {
+                    top: lookup($sizes, spacing xs);
+                }
+                position: absolute;
+                width: 68px;
+            }
+            @include breakpoint(medium, 'max-width') {
+                margin: {
+                    top: lookup($sizes, spacing xxl);
+                }
+            }
         }
     }
     &__top {
         background-color: lookup($colors, brand very-light-gray);
         padding: {
-            top: lookup($sizes, spacing md);
+            top: lookup($sizes, spacing xxl);
             bottom: lookup($sizes, spacing md);
             left: lookup($sizes, spacing md);
             right: lookup($sizes, spacing md);
@@ -18,12 +41,33 @@
     }
     &__bottom {
         background-color: lookup($colors, brand light-gray);
-        height: 100%;
+        height: 300px;
         padding: {
             top: lookup($sizes, spacing md);
             bottom: lookup($sizes, spacing md);
             left: lookup($sizes, spacing md);
             right: lookup($sizes, spacing md);
         }
+        position: relative;
+        &:before {
+            align-items: center;
+            background-color: lookup($colors, brand light-gray);
+            border-radius: 100%;
+            color: lookup($colors, brand dark-red);
+            content: "+";
+            display: flex;
+            font-size: 28px;
+            height: lookup($sizes, spacing lg);
+            justify-content: center;
+            left: 50%;
+            margin-left: -16px;
+            position: absolute;
+            text-align: center;
+            top: -16px;
+            width: lookup($sizes, spacing lg);
+        }
+    }
+    .button {
+        margin: 0 auto;
     }
 }
