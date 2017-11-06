@@ -7,6 +7,7 @@
         <link rel="icon" href="images/favicon.ico" />
         <title>Moneypenny</title>
         <link rel="stylesheet" href="/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Open+Sans:300" rel="stylesheet">
     </head>
     <body>
         <?php include 'inc/banner.html'; ?>
