@@ -11,7 +11,7 @@
         <?php include 'inc/video.html'; ?>
         <?php include 'inc/cards.html'; ?>
         <?php include 'inc/pricing.html'; ?>
-        <?php include 'inc/faqs.html'; ?>
+        <?php include 'inc/faq.html'; ?>
         <?php include 'inc/calltoaction.html'; ?>
     </body>
     <script src="/js/main.js"></script>
