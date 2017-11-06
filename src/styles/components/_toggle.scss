@@ -1,0 +1,89 @@
+.toggle {
+    &__container {
+        display: none;
+        &--active {
+            display: block;
+        }
+    }
+    &__checkbox {
+        display: none;
+    }
+    &__button {
+        @include clearfix;
+        margin: {
+            top: lookup($sizes, spacing lg);
+        }
+    }
+    &__text {
+        @include breakpoint(small, 'max-width') {
+            font-size: 12px;
+        }
+        line-height: 1;
+        margin-bottom: 0;
+        &--align-right {
+            text-align: right;
+        }
+    }
+    &__switch {
+        background: grey;
+        border: 0;
+        border-radius: 32px;
+        cursor: pointer;
+        height: 32px;
+        margin: {
+            top: 0;
+            bottom: 0;
+            left: lookup($sizes, spacing sm);
+            right: lookup($sizes, spacing sm);
+        };
+        min-width: 52px;
+        padding: 0;
+        position: relative;
+        width: 52px;
+        z-index: 0;
+        &::before {
+            background: lookup($colors, brand light);
+            border-radius: 32px;
+            content: "";
+            height: 28px;
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            transform: scale(1);
+            transition: lookup($animation, transition);
+            width: 28px;
+            z-index: 1;
+        }
+        &::after {
+            background: darkgrey;
+            border-radius: 32px;
+            box-shadow: 28px;
+            content: "";
+            z-index: 2;
+        }
+        &--active {
+
+            background: lookup($colors, brand dark-yellow);
+
+            &::before {
+                height: 28px;
+                transform: scale(0);
+                width: 28px;
+            }
+
+            &::after {
+                background: lookup($colors, brand light);
+                border-radius: 32px;
+                content: "";
+                height: 28px;
+                position: absolute;
+                top: 2px;
+                left: 22px;
+                transform: scale(1);
+                transition: lookup($animation, transition);
+                width: 28px;
+                z-index: 99;
+            }
+        }
+    }
+}
