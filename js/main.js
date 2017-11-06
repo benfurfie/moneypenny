@@ -10330,6 +10330,7 @@ return jQuery;
 var $ = __webpack_require__(0);
 
 var card = __webpack_require__(2);
+var card = __webpack_require__(3);
 
 
 /***/ }),
@@ -10356,6 +10357,26 @@ $checkbox.change(function(){
         $toggleContainer.toggleClass('toggle__container--active');
     }
 })
+
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var $ = __webpack_require__(0);
+
+var $faq;
+
+$faqs = $('.faqs__question');
+
+$faqs.click(function(){
+    var $this, $answer;
+    $this = $(this);
+    $answer = $this.next();
+
+    $answer.toggleClass('faqs__answer--active');
+
+});
 
 
 /***/ })
