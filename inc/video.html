@@ -1,13 +1,19 @@
 <section class="section flex flex--align-center flex--column">
     <h2 class="title title--talk title--red title--margin-xxlarge">Watch how it works</h2>
-    <div class="toggle">
-        <div class="toggle__first">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/XdvwHajruZg?list=PLv9Sw13FrPiCubMilB1DSAUZ6Bk1HX0PJ" frameborder="0" gesture="media" allowfullscreen></iframe>
+    <div class="toggle video">
+        <div class="toggle__container toggle__container--active">
+            <div class="video__container">
+                <iframe src="https://www.youtube.com/embed/XdvwHajruZg?list=PLv9Sw13FrPiCubMilB1DSAUZ6Bk1HX0PJ" frameborder="0" gesture="media" allowfullscreen></iframe>
+            </div>
         </div>
-        <div class="toggle__second">
-            ...
+        <div class="toggle__container">
+            <div class="video__container">
+                <iframe src="https://www.youtube.com/embed/7Jo-oznK4HM" frameborder="0" gesture="media" allowfullscreen></iframe>
+            </div>
         </div>
-        <!-- This will be refactored later on to make it work as it should. -->
-        <a href="#" class="toggle__button">#</a>
+        <label for="toggle__checkbox" class="toggle__button flex flex--justify-center flex--align-center">
+            <input class="toggle__checkbox" id="toggle__checkbox" type="checkbox">
+            <p class="toggle__text toggle__text--align-right">How the app works</p><div class="toggle__switch"></div><p class="toggle__text">How the portal works</p>
+        </label>
     </div>
 </section>

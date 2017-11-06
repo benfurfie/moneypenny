@@ -14,4 +14,5 @@
         <?php include 'inc/faqs.html'; ?>
         <?php include 'inc/calltoaction.html'; ?>
     </body>
+    <script src="/js/main.js"></script>
 </html>
