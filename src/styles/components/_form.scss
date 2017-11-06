@@ -6,4 +6,7 @@
             color: lookup($colors, brand dark-red);
         }
     }
+    &__label {
+        text-align: left;
+    }
 }
