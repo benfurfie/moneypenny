@@ -33,7 +33,7 @@
     &__top {
         background-color: lookup($colors, brand very-light-gray);
         padding: {
-            top: lookup($sizes, spacing md);
+            top: lookup($sizes, spacing xxl);
             bottom: lookup($sizes, spacing md);
             left: lookup($sizes, spacing md);
             right: lookup($sizes, spacing md);
@@ -66,5 +66,8 @@
             top: -16px;
             width: lookup($sizes, spacing lg);
         }
+    }
+    .button {
+        margin: 0 auto;
     }
 }
