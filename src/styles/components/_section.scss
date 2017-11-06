@@ -5,6 +5,9 @@
     }
     &__wrap {
         @include container;
+        &--center {
+            text-align: center;
+        }
     }
     &--cards {
         background-color: lookup($colors, brand gray);
