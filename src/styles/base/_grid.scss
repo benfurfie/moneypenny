@@ -1,10 +1,30 @@
 .grid {
     display: grid;
     grid-gap: 40px;
-    @include breakpoint(medium) {
-
+    grid-template-columns: 1fr;
+    &--sm-no-gap {
+        @include breakpoint(medium, 'max-width') {
+            grid-gap: 0;
+        }
     }
-    @include breakpoint(large) {
-        grid-template-columns: 1fr 1fr 1fr;
+    &--md-2 {
+        @include breakpoint(medium) {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    &--md-3 {
+        @include breakpoint(medium) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+    &--lg-2 {
+        @include breakpoint(large) {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    &--lg-3 {
+        @include breakpoint(large) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
     }
 }

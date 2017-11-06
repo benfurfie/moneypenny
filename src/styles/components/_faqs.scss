@@ -1,0 +1,35 @@
+.faqs {
+    background-color: lookup($colors, brand light-yellow);
+    color: lookup($colors, brand light);
+    padding: {
+        top: 60px;
+        bottom: 60px;
+    }
+    &__wrap {
+        @include container;
+        text-align: center;
+    }
+    &__content {
+        text-align: left;
+    }
+    &__column {
+        margin-bottom: 0;
+    }
+    &__question {
+        align-items: center;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: lookup($sizes, spacing sm);
+        svg {
+            min-width: 23px;
+        }
+    }
+    &__answer {
+        display: none;
+        &--active {
+            display: block;
+            margin-bottom: lookup($sizes, spacing lg);
+        }
+    }
+}
