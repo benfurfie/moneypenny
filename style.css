@@ -631,6 +631,88 @@ ol {
   .form__label {
     text-align: left; }
 
+.toggle__container {
+  display: none; }
+  .toggle__container--active {
+    display: block; }
+
+.toggle__checkbox {
+  display: none; }
+
+.toggle__button {
+  margin-top: 2rem; }
+  .toggle__button:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.toggle__text {
+  line-height: 1;
+  margin-bottom: 0; }
+  @media screen and (max-width: 34.375rem) {
+    .toggle__text {
+      font-size: 0.75rem; } }
+  .toggle__text--align-right {
+    text-align: right; }
+
+.toggle__switch {
+  background: grey;
+  border: 0;
+  border-radius: 2rem;
+  cursor: pointer;
+  height: 2rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  min-width: 3.25rem;
+  padding: 0;
+  position: relative;
+  width: 3.25rem;
+  z-index: 0; }
+  .toggle__switch::before {
+    background: #fff;
+    border-radius: 2rem;
+    content: "";
+    height: 1.75rem;
+    position: absolute;
+    top: 0.125rem;
+    left: 0.125rem;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+    width: 1.75rem;
+    z-index: 1; }
+  .toggle__switch::after {
+    background: darkgrey;
+    border-radius: 2rem;
+    -webkit-box-shadow: 1.75rem;
+            box-shadow: 1.75rem;
+    content: "";
+    z-index: 2; }
+  .toggle__switch--active {
+    background: #FBB656; }
+    .toggle__switch--active::before {
+      height: 1.75rem;
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      width: 1.75rem; }
+    .toggle__switch--active::after {
+      background: #fff;
+      border-radius: 2rem;
+      content: "";
+      height: 1.75rem;
+      position: absolute;
+      top: 0.125rem;
+      left: 1.375rem;
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transition: all 150ms ease-in-out;
+      transition: all 150ms ease-in-out;
+      width: 1.75rem;
+      z-index: 99; }
+
 .section {
   padding-top: 7.5rem;
   padding-bottom: 5rem; }
