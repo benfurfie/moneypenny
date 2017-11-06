@@ -48,5 +48,23 @@
             left: lookup($sizes, spacing md);
             right: lookup($sizes, spacing md);
         }
+        position: relative;
+        &:before {
+            align-items: center;
+            background-color: lookup($colors, brand light-gray);
+            border-radius: 100%;
+            color: lookup($colors, brand dark-red);
+            content: "+";
+            display: flex;
+            font-size: 28px;
+            height: lookup($sizes, spacing lg);
+            justify-content: center;
+            left: 50%;
+            margin-left: -16px;
+            position: absolute;
+            text-align: center;
+            top: -16px;
+            width: lookup($sizes, spacing lg);
+        }
     }
 }
