@@ -495,7 +495,9 @@ a {
   line-height: 1; }
   .title__icon {
     height: 1.5rem;
-    margin-right: 0.5rem; }
+    margin-right: 0.5rem;
+    margin-top: 0.25rem;
+    width: auto; }
     @media screen and (min-width: 64rem) {
       .title__icon {
         height: 2rem; } }

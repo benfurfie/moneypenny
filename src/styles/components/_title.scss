@@ -5,7 +5,9 @@
         height: lookup($typography, title size whisper);
         margin: {
             right: lookup($sizes, spacing xs);
+            top: 4px;
         }
+        width: auto;
         @include breakpoint(large) {
             height: lookup($typography, title size talk);
         }
