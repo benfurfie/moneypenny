@@ -1,0 +1,14 @@
+.subtitle {
+    font-size: lookup($typography, paragraph size whisper);
+    &--highlight {
+        color: lookup($colors, brand light-red);
+    }
+    &--uppercase {
+        text-transform: uppercase;
+    }
+    &--absolute {
+        position: absolute;
+        top: lookup($sizes, spacing xs);
+        width: calc(100% - 48px);
+    }
+}
