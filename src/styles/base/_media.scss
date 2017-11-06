@@ -4,3 +4,11 @@ img {
     max-width: 100%;
     width: 100%;
 }
+
+svg {
+    transition: lookup($animation, transition);
+}
+
+.svg--active {
+    transform: rotate(180deg);
+}

@@ -468,6 +468,14 @@ img {
   max-width: 100%;
   width: 100%; }
 
+svg {
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out; }
+
+.svg--active {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
 html,
 body {
   background-color: #fdfdfd;
@@ -858,7 +866,7 @@ ol {
         padding-top: 0.5rem;
         position: absolute;
         width: 4.25rem; }
-      @media screen and (max-width: 48rem) {
+      @media screen and (max-width: 64rem) {
         .pricing__table--highlight {
           margin-top: 3.75rem; } }
   .pricing__top {

@@ -23,7 +23,7 @@
                 position: absolute;
                 width: 68px;
             }
-            @include breakpoint(medium, 'max-width') {
+            @include breakpoint(large, 'max-width') {
                 margin: {
                     top: lookup($sizes, spacing xxl);
                 }
